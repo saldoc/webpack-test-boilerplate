@@ -1,0 +1,17 @@
+include base/head
+
+-
+    var pages = [
+        {label: 'Homepage', href: 'homepage.html'}
+    ]
+doctype html
+html(lang='tr')
+    head
+        +head()
+        title Webpack Test Boilerplate
+
+    body
+        ul.o-presentation__list
+            each page in pages
+                li.o-presentation__item
+                    a.o-presentation__link(href=page.href)= page.label

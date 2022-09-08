@@ -4,13 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const pagesJson = require('./webpack-pages.json');
+const styleGuidesJson = require('./webpack-style-guides.json');
 
-const pages = [
-  { name: 'index', scripts: ['common'] },
-  { name: 'homepage', scripts: ['common', 'app'] },
-];
+const pages = pagesJson.pages;
 
-const styleGuides = [{ name: 'button', scripts: ['common'] }];
+const styleGuides = styleGuidesJson.styleGuides;
 
 module.exports = {
   entry: {

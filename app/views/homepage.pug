@@ -1,11 +1,9 @@
-include ./base/head
+extends ./layout/main-layout.pug
 
-doctype html
-html(lang='en')
-    head
-        +head()
-        title Homepage
+block head
+    title= 'Homepage'
 
+block content
     main.p-homepage
         .container
             .row.d-flex.justify-content-center

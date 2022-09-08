@@ -1,0 +1,14 @@
+include ../base/head
+
+doctype html
+html(lang='en')
+    head
+        +head()
+        block head
+            title= 'Dynamic title'
+    body
+        include ./site-header
+
+        block content
+
+        include ./site-footer

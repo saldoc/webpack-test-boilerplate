@@ -1,0 +1,10 @@
+{
+  "styleGuides": [
+    {
+      "name": "button",
+      "scripts": [
+        "common"
+      ]
+    }
+  ]
+}

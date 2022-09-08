@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "name": "index",
+      "scripts": [
+        "common"
+      ]
+    },
+    {
+      "name": "homepage",
+      "scripts": [
+        "common",
+        "app"
+      ]
+    }
+  ]
+}

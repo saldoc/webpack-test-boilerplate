@@ -1,0 +1,109 @@
+// Media Queries
+@mixin atVerySmall {
+  @media (min-width: 340px) {
+    @content;
+  }
+}
+
+@mixin atSmall {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin inMedium {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin inLarge {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin atExtraLarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin inExtraLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin atSuperLarge {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin inSuperLarge {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin atDeluxeLarge {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin atGrandLarge {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin inGrandLarge {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin inGrandLargeX {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+
+//Scrollbar style
+@mixin scrollbars {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #a2a2a2;
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(#cbcbcb, 0.25);
+    border-radius: 20px;
+  }
+
+  // For Firefox
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: #a2a2a2 rgba(#cbcbcb, 0.25);
+  }
+}

@@ -4,6 +4,7 @@ include base/head
     var pages = [
         {label: 'Homepage', href: 'homepage.html'}
     ]
+
 doctype html
 html(lang='tr')
     head
@@ -11,7 +12,7 @@ html(lang='tr')
         title Webpack Test Boilerplate
 
     body
-        ul.o-presentation__list
+        ul(class='o-presentation__list')
             each page in pages
-                li.o-presentation__item
-                    a.o-presentation__link(href=page.href)= page.label
+                li(class='o-presentation__item')
+                    a(class='o-presentation__link' href=page.href)= page.label

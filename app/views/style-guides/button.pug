@@ -1,11 +1,12 @@
-include ../base/head
-// TODO: Add style guide page layout
-doctype html
-html(lang='en')
-    head
-        +head()
-        title Button - Style Guide
 
-    body
-        button.o-btn Click!
+extends ../layout/style-guide-layout.pug
+
+block head
+    title= 'Button - Style Guide'
+
+block content
+    h1(class='o-style-guide__title') Button
+    div(class='o-style-guide__content')
+        +style-guide-block('Default')
+        button(class='o-btn') Button
 

@@ -1,0 +1,21 @@
+include ../base/head
+include ../mixins/style-guilde-block
+
+
+doctype html
+html(lang='en')
+    head
+        +head()
+        block head
+            title= 'Dynamic title'
+    body
+        div(class='container')
+            div(class='o-style-guide')
+                div(class='o-style-guide__back')
+                    a(class='o-style-guide__back-link' href='style-guide.html')
+                        i(class='o-icon o-icon--chevron-left')
+                        |  Style Guide
+                div(class='o-style-guide__header')
+                    img(class='o-style-guide__header__img' src='assets/images/logo.png' alt='logo')
+
+        block content

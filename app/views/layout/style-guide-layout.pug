@@ -1,13 +1,17 @@
 include ../base/head
 include ../mixins/style-guilde-block
 
+block variables
+    - var pageTitle = 'Dynamic title'
 
 doctype html
 html(lang='en')
     head
         +head()
+        title= `${pageTitle} - Style Guide`
+
         block head
-            title= 'Dynamic title'
+        
     body
         div(class='container')
             div(class='o-style-guide')
@@ -18,4 +22,6 @@ html(lang='en')
                 div(class='o-style-guide__header')
                     img(class='o-style-guide__header__img' src='assets/images/logo.png' alt='logo')
 
-        block content
+                h1(class='o-style-guide__title')= pageTitle
+                div(class='c-style-guide__content')
+                    block content

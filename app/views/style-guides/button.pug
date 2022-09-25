@@ -1,12 +1,11 @@
-
 extends ../layout/style-guide-layout.pug
 
+block variables
+    - var pageTitle = 'Button'
+
 block head
-    title= 'Button - Style Guide'
 
 block content
-    h1(class='o-style-guide__title') Button
-    div(class='o-style-guide__content')
-        +style-guide-block('Default')
-        button(class='o-btn') Button
+    +style-guide-block('Default')
+        button(class='c-btn') Button
 

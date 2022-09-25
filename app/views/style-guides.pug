@@ -1,0 +1,25 @@
+include base/head
+
+-
+    var styleGuides = [
+        {label: 'Button', href: 'style-guide-button.html'}
+    ]
+
+doctype html
+html(lang='tr')
+    head
+        +head()
+        title Style Guides
+
+    body
+        div(class='container')
+          div(class='c-style-guide')
+            div(class='c-style-guide__header')
+              img(class='c-style-guide__header__img' src='assets/images/logo.png' alt='logo')
+              
+            h1(class='c-style-guide__title') Style Guides
+            ul(class='c-style-guide__list')
+              each styleGuide in styleGuides
+                li(class='c-style-guide__item')
+                  a(class='c-style-guide__link' href=styleGuide.href)= styleGuide.label
+            
